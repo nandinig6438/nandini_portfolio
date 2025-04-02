@@ -1,9 +1,9 @@
 
-import React from "react";
+import React from 'react'
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
-const Resume: React.FC = () => {
+const Resume = () => {
   const educationItems = [
     {
       institution: "Hindustan College of Science and Technology, Farah Mathura",
@@ -35,7 +35,15 @@ const Resume: React.FC = () => {
       period: "November 2024 - Ongoing",
       location: "Agra, Uttar Pradesh",
       description:
-        "Currently gaining hands-on experience in web development, working with technologies like HTML, CSS, and JavaScript to build responsive and user-friendly websites.",
+        "Currently gaining hands-on experience in front-end development, working with technologies like HTML, CSS, and JavaScript to build responsive and user-friendly websites.",
+    },
+    {
+      company: "InsuranceDekho",
+      position: "B2C Sales Executive Trainee",
+      period: "August 2024- October2024",
+      location: "Gurgaon, Haryana",
+      description:
+        "As a B2C Life Insurance Sales Customer Advisor, I assist clients in selecting suitable insurance policies, provide expert guidance, and build strong customer relationships to drive sales and ensure customer satisfaction.",
     },
     {
       company: "Inari Shine Jewels",
@@ -71,6 +79,7 @@ const Resume: React.FC = () => {
   ];
 
   return (
+    <>
     <section id="resume" className="py-20 bg-portfolio-bg">
       <div className="container mx-auto">
         <h2 className="section-title">Resume</h2>
@@ -282,6 +291,7 @@ const Resume: React.FC = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
